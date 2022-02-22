@@ -359,8 +359,36 @@
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+.transparent-header {
+    padding: 0px 26px;
+}
+    .work-section-list ul li {
+    width: 260px;
+}
+    .counter-item {
+    width: 100%;
+}
+    .overlay-post {
+    padding: 5px 5px 0px 11px;
+}
+    .post-title {
+    font-size: 23px;
+}
+    .overlay-post h2 {
+    font-size: 12px;
+    margin: 0;
+}
 
-
+    .overlay-post span {
+    font-size: 11px;
+}
+    .footer__social ul li {
+    display: block;
+}
+    
+    .footer__social ul li:not(:last-child) {
+    margin-bottom: 13px;
+}
 }
 
 
