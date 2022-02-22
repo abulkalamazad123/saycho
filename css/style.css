@@ -378,7 +378,15 @@ label {
 .mmain-menu > nav > ul > li:hover::before {
 	height: 25px;
 }
-
+/* header */
+.header-transparent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	transition: .4s;
+}
 .header-bar {
 	background: #fff;
 	height: 50px;
@@ -426,10 +434,128 @@ label {
 	color: #fff;
 }
 
+.side-menu ul li {
+	padding: 6px;
+  }
+  .side-menu ul li a {
+	color: #fff;
+  }
 .header-bar {
 	margin-left: 50px;
 }
+.extra-info {
 
+	background: #005046 none repeat scroll 0 0;
+
+	height: 100%;
+
+	padding: 30px;
+
+	position: fixed;
+
+	right: 0;
+
+	top: 0;
+
+	transition: all 0.7s ease 0s;
+
+	width: 340px;
+
+	z-index: 9999;
+
+	transform: translateX(100%);
+
+	padding-bottom: 40px;
+
+}
+
+.extra-info.info-open {
+
+  transform: translateX(0);
+
+}
+
+.extra-info-left{right:inherit;left: 0;transform: translateX(-100%);}
+
+.extra-info.extra-info-left.info-open{transform: translateX(0);}
+
+.close-icon {
+
+  margin-top: -16px;
+
+  text-align: right;
+
+}
+
+.close-icon > button {
+
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+
+  border: 0 none;
+
+  color: #e61937;
+
+  cursor: pointer;
+
+  font-size: 20px;
+
+  padding: 0;
+
+}
+
+.extra-info > p {
+
+  color: #ddd;
+
+  font-size: 15px;
+
+  line-height: 28px;
+
+}
+
+.instagram img {
+
+  width: 100%;
+
+}
+
+.social-icon-right > a {
+
+	color: #fff;
+
+	display: inline-block;
+
+	margin-right: 20px;
+
+	text-align: center;
+
+}
+
+.social-icon-right > a:hover {
+
+	color: #e61937;
+
+}
+
+.instagram {
+
+  overflow: hidden;
+
+  margin: 0 -4px;
+
+}
+
+.instagram > a {
+
+	float: left;
+
+	width: 33.33%;
+
+	padding: 0 4px;
+
+	margin-bottom: 7px;
+
+}
 /* slider */
 
 .single-slider {
@@ -589,7 +715,9 @@ button{
 .work-img {
 	position: relative;
   }
-
+  .work-img img {
+	width: 100%;
+}
 .work-overflow-text {
 	width: 250px;
 	background: #f4e3d3;
@@ -1022,9 +1150,6 @@ border: 1px solid #fff;
 }
 
 
-
-
-
 .price-total-box {
 	position: relative;
 	overflow: hidden;
@@ -1037,7 +1162,7 @@ border: 1px solid #fff;
 	background: #fff;
 	border-radius: 50%;
 	position: absolute;
-	padding: 24px;
+	padding: 30px;
 	right: 0;
 	top: 18%;
 	border: 10px solid #f8a683;
@@ -1374,6 +1499,7 @@ color: #ce633f;
 	padding: 20px 0;
 	border-top: 1px solid #2d2e2e;
 }
+
 .brand-backg h2 {
 	font-size: 50px;
 	color: #fff;
